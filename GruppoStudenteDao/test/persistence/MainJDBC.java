@@ -102,6 +102,12 @@ public class MainJDBC {
 		gruppoDao.delete(gruppo1);			
 		for(Studente s : studenteDao.findAll()) {
 			System.out.println(s);
-		}		
+		}
+		
+		System.out.println("Retrieve all gruppo: proxy all'opera");
+		for(Gruppo g : gruppoDao.findAll()) {
+			System.out.println(g);
+		}
+		
 	}
 }

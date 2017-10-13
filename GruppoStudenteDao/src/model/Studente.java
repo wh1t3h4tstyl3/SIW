@@ -7,6 +7,7 @@ public class Studente {
 	private String nome;
 	private String cognome;
 	private Date dataNascita;
+	private Indirizzo indirizzo;
 
 	public Studente(){}
 	
@@ -51,6 +52,14 @@ public class Studente {
 		this.dataNascita = dataNascita;
 	}
 	
+	public Indirizzo getIndirizzo() {
+		return indirizzo;
+	}
+
+	public void setIndirizzo(Indirizzo indirizzo) {
+		this.indirizzo = indirizzo;
+	}
+
 	public int hashCode(){
 		return this.matricola.hashCode();
 	}
