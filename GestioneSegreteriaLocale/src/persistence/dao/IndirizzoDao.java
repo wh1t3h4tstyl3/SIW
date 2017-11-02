@@ -3,7 +3,6 @@ package persistence.dao;
 import java.util.List;
 
 import model.Indirizzo;
-import model.Studente;
 
 public interface IndirizzoDao {
 	public void save(Indirizzo indirizzo);  // Create

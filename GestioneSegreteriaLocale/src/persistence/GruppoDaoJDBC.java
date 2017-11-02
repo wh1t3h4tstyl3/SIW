@@ -66,7 +66,7 @@ class GruppoDaoJDBC implements GruppoDao {
 			PreparedStatement statement = connection.prepareStatement(update);
 			statement.setLong(1, gruppo.getId());
 			statement.setString(2, studente.getMatricola());
-			int s=statement.executeUpdate();
+			statement.executeUpdate();
 			
 		}
 	}

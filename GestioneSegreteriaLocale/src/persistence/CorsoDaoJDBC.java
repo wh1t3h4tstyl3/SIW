@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.Corso;
-import model.Gruppo;
 import model.Studente;
 import persistence.dao.CorsoDao;
 import persistence.dao.StudenteDao;

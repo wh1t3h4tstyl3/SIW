@@ -9,7 +9,6 @@ import java.util.List;
 
 import model.Corso;
 import model.CorsoDiLaurea;
-import model.Studente;
 import persistence.dao.CorsoDao;
 import persistence.dao.CorsoDiLaureaDao;
 

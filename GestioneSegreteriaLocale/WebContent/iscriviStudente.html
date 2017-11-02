@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
+<head lang="it">
+<meta charset="utf-8">
 <title>Iscrivi Studente</title>
 </head>
 <body>
@@ -13,44 +13,28 @@
 			Portale per la gestione degli studenti afferenti a qualche corso di laurea
 		</h2>
 	</header>
-	<form method="post" action="iscrivi.php">
-	<table>
-		<tr>
-			<td> Matricola: </td> <td> <input name="matricola" type="text" /> <td>
-		</tr>
-		<tr>
-			<td> Nome: </td> <td> <input name="nome" type="text" /> <td>
-		</tr>
-		<tr>
-			<td> Cognome: </td> <td> <input name="cognome" type="text" /> <td>
-		</tr>
-		<tr>
-			<td> Data di nascita: </td> <td> <input name="dataNascita" type="date" /> <td>
-		</tr>
-		<tr>
-			<td> Indirizzo: </td>
-			<td>
-				<select name="indirizzo">
+
+	<section id="registration_form">
+		<form method="post" action="iscrivi.php">
+				Matricola: <input name="matricola" type="text" /> <br> 
+				Nome: <input name="nome" type="text" /> <br>
+				Cognome: <input name="cognome"type="text" /> <br> 
+				Data di nascita: <input name="dataNascita"type="date" /> <br> 
+				Indirizzo: <select name="indirizzo">
 					<optgroup label="Intelligenza Artificiale">
-						<option value="rob"> Robotica </option>
-						<option value="logic"> Logica Computazionale</option>
+						<option value="rob">Robotica</option>
+						<option value="logic">Logica Computazionale</option>
 					</optgroup>
 					<optgroup label="Storia">
-						<option value="arch" selected> Archeologia </option>
-					</optgroup>	
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td> Password: </td> <td> <input name="password" type="password" /> </td>  
-		</tr>
-		<tr>
-			<td> <input name="validaDati" type="button" value="Valida Dati" /> </td>  
-		</tr>
-		<tr>
-			<td> <input name="submit" type="submit" value="Submit" /> </td>  
-		</tr>
-	</table>
-	</form>
+						<option value="arch" selected>Archeologia</option>
+					</optgroup>
+				</select> <br>
+				Definisci una password per lo studente: <input name="password" type="password" /> <br> 
+				Conferma password:<input name="confermaPassword" type="password" /> <br>
+				<input name="validaDati" type="button" value="Valida Dati" /> <br>
+				<input name="submit" type="submit" value="Submit" /> <br>
+				<input name="reset" type="reset" value="Reset" /> <br>
+		</form>
+	</section>
 </body>
 </html>

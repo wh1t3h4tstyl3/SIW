@@ -7,9 +7,7 @@ import java.sql.SQLException;
 import java.util.LinkedList;
 import java.util.List;
 
-import model.Gruppo;
 import model.Indirizzo;
-import model.Studente;
 import persistence.dao.IndirizzoDao;
 
 public class IndirizzoDaoJDBC implements IndirizzoDao{

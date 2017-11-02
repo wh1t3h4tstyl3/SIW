@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-	<title>
-		Gestione Segreteria Studenti
-	</title>
+<head lang="it">
+<meta charset="utf-8">
+	<title>Gestione Segreteria Studenti</title>
 </head>
-<body bgcolor="gray">
+<body>
 	<header>
-		<h1>
-			Portale Segreteria Studenti
-		</h1>
-		<h2>
-			Portale per la gestione degli studenti afferenti a qualche corso di laurea
-		</h2>
-		<figure>
-			<a href="images/Informatica_Unical.jpg">
-				<img src="images/Informatica_Unical.jpg" width=600>
-			</a>
-			<figcaption>
-				La nostra segreteria studenti
-			</figcaption>
-		</figure>
+		<div align="center">
+			<h1>
+				Portale Segreteria Studenti
+			</h1>
+			<h2>
+				Portale per la gestione degli studenti afferenti a qualche corso di laurea
+			</h2>
+			<figure>
+				<a href="images/Informatica_Unical.jpg">
+					<img src="images/Informatica_Unical.jpg" width=600>
+				</a>
+				<figcaption>
+					La nostra segreteria studenti
+				</figcaption>
+			</figure>
+		</div>
 	</header>
-	<p>
+	<p align="center">
 		Benvenuti nel portale di gestione delle <br> 
 		Segreterie Studenti.
 	</p>
@@ -34,44 +34,88 @@
 		</strong>
 		per gestire le varie funzionalità.
 	</p>
-	<section draggable="true"> 
-		<div style="background-color:white" align="center">
-			Vuoi vedere il portale delle segreterie dell'Unical? 
-			<a href="http://www.unical.it/portale/">
-				 Clicca quì
-			</a>
+
+	<nav role="navigation">
+		<ol>
+			<li>Studenti
+				<ul>
+					<li><a href="studenti.html">Soli nominativi</a></li>
+					<li>Nominativi e indirizzi</li>
+					<li>Informazioni complete</li>
+					<li><a href="iscriviStudente.html"> Iscrivi studente </a></li>
+				</ul>
+			</li>
+			<li>Gruppi
+				<ul>
+					<li>Solo nominativi</li>
+					<li>Studenti per gruppo</li>
+				</ul>
+			</li>
+			<li>Indirizzi
+				<ul>
+					<li>Solo nominativi</li>
+					<li>Studenti per indirizzo</li>
+				</ul>
+			</li>
+			<li>Corsi
+				<ul>
+					<li>Solo nominativi</li>
+					<li>Nominativi e corsi di laurea</li>
+					<li>Corsi e studenti iscritti</li>
+				</ul>
+			</li>
+			<li>Corsi di Laurea
+				<ul>
+					<li>Nominativi e dipartimento</li>
+					<li>Corsi afferenti ai corsi di laurea</li>
+					<li>Corsi e studenti iscritti</li>
+				</ul>
+			</li>
+			<li>Dipartimenti
+				<ul>
+					<li>Nominativi</li>
+					<li>Corsi di laurea</li>
+				</ul>
+			</li>
+		</ol>
+	</nav>
+	
+	<section id="unical" draggable="true"> 
+		<div align="center">
+			Vuoi vedere il portale dell'Unical? 
 		</div>
 	</section>
-	<ol>
-		<li> Studenti
-			<ul>
-				<li>
-					<a href="studenti.html">
-						Solo nominativi
-					</a>
-				</li>
-			</ul>
-		</li>
-		<li> Gruppi
-			<ul>
-				<li> Solo nominativi </li>
-				<li> Studenti per gruppo </li>
-			</ul>
-		</li>
-		<li> Indirizzi
-			<ul>
-				<li> Solo nominativi </li>
-				<li> Studenti per indirizzo </li>
-			</ul>
-		</li>
-		<li> Iscrivi Studente
-			<ul>
-				<li> <a href="iscriviStudente.html"> Iscrivi </a> </li>
-			</ul>
-		</li>
-	</ol>
+	
+	<section id="information">
+		<article id="aboutUs">
+			<header>
+				<h1>Dicono di Noi</h1>
+			</header>
+			La Segreteria è un servizio di riferimento per informazione e procedure burocratiche riguarda all´immatricolazione, iscrizione, registrazione esami, richiesta e rilascia di certificati, gestione della didattica e delle laure. 
+			Ogni corso di Laurea ha la propria segreteria dove si può rivolgersi per qualsiasi informazione riguardo alla didattica dell´Ateneo.
+		</article>
+		<article id="ictCenter">
+			<header>
+				<h1>Centro ICT di Ateneo</h1>
+			</header>
+			Dalla pagina accessibile da <a href="http://www.unical.it/portale/strutture/centri/centroict/serviziict/homeservizicentro/"><strong>qui</strong></a> è possibile accedere a tutti i servizi ed al  Centro Customer Satisfaction (CCS) del Centro ICT d’Ateneo. 
+			È possibile trovare il servizio desiderato sia attraverso degli elenchi di servizi organizzati secondo la tipologia di utenza 
+			sia attraverso la ricerca per parole chiave con un motore di ricerca locale google. Per ogni servizio
+			è stata approntata una scheda descrittiva contenente tutte le informazioni sullo stesso. Dal CCS 
+			invece è possibile valutare, accedere alle statistiche d’uso o sporgere reclami sui servizi. 
+		</article>
+	</section>
+		
+		<aside>
+		<figure>
+			<a href="http://www.unical.it"><img src="images/logo_unical.png" alt="Sito Unical" width="300" /></a>
+			<figcaption>Il sito dell'Unical</figcaption>
+		</figure>
+		<a href="http://www.unical.it">Clicca qui</a> per accedere al sito dell'<strong>Unical</strong>
+	</aside>
+	
 	<footer>
-		<p align="center" draggable="true">
+		<div align="right" draggable="true">
 			<small>
 				Sito Web realizzato per il corso Web Computing. <br>
 				Contatta l'esercitatore a 
@@ -79,7 +123,7 @@
 					reale@dlvsystem.com
 				</a>
 			</small>
-		</p>
+		</div>
 	</footer>
 </body>
 </html>
