@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head lang="it">
+<meta charset="utf-8">
+<title>Calcolo ISEE</title>
+<script type="text/javascript" src="../js/gestioneServizi.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah"
+	rel="stylesheet">
+<link rel="stylesheet" href="../prova.css" type="text/css">
+</head>
+<body>
+	<header>
+		<h1>Elenco studenti</h1>
+		<h2>Portale per la gestione degli studenti afferenti a qualche
+			corso di laurea</h2>
+		<table>
+			<caption>Nominativi degli studenti iscritti</caption>
+			<thead>
+				<tr>
+					<th>Matricola</th>
+					<th>Nome</th>
+					<th>Cognome</th>
+					<th>Data di nascita</th>
+					<th>Indirizzo di studi</th>
+					<th>Calcolo ISEE</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td><a href=""> Ordina per Matricola </a></td>
+					<td><a href=""> Ordina per Nome </a></td>
+					<td><a href=""> Ordina per Cognome </a></td>
+					<td><a href=""> Ordina per Data di nascita </a></td>
+					<td><a href=""> Ordina per Indirizzo di studi </a></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>135587</td>
+					<td>Nicola</td>
+					<td>Loria</td>
+					<td>12/12/1992</td>
+					<td>Scienza e tecnica</td>
+					<td><input class="myStyle" name="calcola" type="button"
+						value="Calcola ISEE"
+						onclick="s = new Studente('135587', 'Nicola', 'Loria', '12/12/1992'); calcola(s)" /></td>
+				</tr>
+				<tr>
+					<td>152255</td>
+					<td>Enzo</td>
+					<td>De Caro</td>
+					<td>15/02/1994</td>
+					<td>Giurisprudenza</td>
+					<td><input class="myStyle" name="calcola" type="button"
+						value="Calcola ISEE"
+						onclick="s = new Studente('152255', 'Enzo', 'De Caro', '15/02/1994'); calcola(s)" /></td>
+				</tr>
+				<tr>
+					<td>111213</td>
+					<td>Fabiana</td>
+					<td>Guidi</td>
+					<td>08/10/1990</td>
+					<td>Biologia</td>
+					<td><input class="myStyle" name="calcola" type="button"
+						value="Calcola ISEE"
+						onclick="s = new Studente('111213', 'Fabiana', 'Guidi', '08/10/1990'); calcola(s)" /></td>
+				</tr>
+			</tbody>
+		</table>
+	</header>
+</body>
+</html>

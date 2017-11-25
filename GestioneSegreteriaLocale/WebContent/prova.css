@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+#headerUp {
+	background-color: #f2f2f2;
+	color: black;
+}
+
+body {
+	margin: 0px 0px 0px 0px;
+	background-color: #000000;
+	color: white;
+	font-family:'Gloria Hallelujah', cursive;
+	font-size: 20px;
+}
+
+a {
+	color: red;
+}
+
+aside {
+	background-color: #f2f2f2;
+	color: black;
+	position: absolute;
+  	float: left;
+	width: 25%;
+	height: 20%;
+	bottom: -200px;
+	right: 50px;
+	
+}
+
+.submenu>li {
+	list-style-type: disc;
+}
+
+.mainMenu>li {
+	display: table-cell;
+}
+
+
+
+.form {
+	border: 3px solid white;
+}
+
+table {
+	background-color: #f2f2f2;
+	color: black;	
+	border: 1px solid blue;
+}
+
+th,td {
+	border: 2px solid black;	
+}
