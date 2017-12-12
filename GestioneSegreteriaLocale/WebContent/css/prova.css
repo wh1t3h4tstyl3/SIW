@@ -6,7 +6,7 @@
 }
 
 body {
-	margin: 0px 0px 0px 0px;
+	margin: 20px 20px 20px 20px;
 	background-color: #000000;
 	color: white;
 	font-family:'Gloria Hallelujah', cursive;
@@ -39,8 +39,13 @@ aside {
 
 
 
-.form {
-	border: 3px solid white;
+.formIscrizione {
+	border: 2px solid black;
+	width:150%;
+}
+
+.form-control {
+	font-size: 65%;
 }
 
 table {
