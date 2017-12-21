@@ -79,8 +79,36 @@ function orderStudent(orderBy) {
 		}
 	}
 
-	for (var i = 0; i < size; ++i) {
-		alert(students[i].info());
+	studentRows.empty();
+	for (var i = 0; i < students.length; i++){			
+		var alternate;
+		if ((i % 2) == 0){
+			alternate = "success";
+		}else{
+			alternate = "active";
+		}		
+		
+		var riga = $("<tr></tr>");
+		studentRows.append(riga);	
+		
+		riga.addClass(alternate);
+		riga.addClass("studente");				
+				
+		var col1 = $("<td>" + students[i].matricola + "</td>");
+		riga.html(col1);		
+		
+		var col2 = $("<td>" + students[i].nome + "</td>");
+		col1.after(col2);		
+		
+		var col3 = $("<td>" + students[i].cognome + "</td>");
+		col2.after(col3);		
+		
+		alert(students[i].dataNascita.toDateString());
+		var col4 = $("<td><time>" + students[i].dataNascita.toDateString() + "</time></td>");
+		col3.after(col4);		
+		
+		var col5 = $("<td>" + students[i].indirizzo + "</td>");
+		col4.after(col5);		
 	}
 
 }

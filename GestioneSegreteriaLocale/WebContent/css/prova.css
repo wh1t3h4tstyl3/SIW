@@ -7,7 +7,7 @@
 
 body {
 	margin: 20px 20px 20px 20px;
-	background-color: #000000;
+	background-color: black;
 	color: white;
 	font-family:'Gloria Hallelujah', cursive;
 	font-size: 20px;
@@ -49,11 +49,14 @@ aside {
 }
 
 table {
-	background-color: #f2f2f2;
 	color: black;	
-	border: 1px solid blue;
+	border: 2px solid black;
 }
 
-th,td {
+td, th {
 	border: 2px solid black;	
+}
+
+.table-responsive th {
+	background-color: olive;
 }

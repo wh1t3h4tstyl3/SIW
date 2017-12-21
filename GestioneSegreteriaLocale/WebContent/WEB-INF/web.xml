@@ -12,13 +12,29 @@
   </welcome-file-list>
   
   <servlet>
+    <servlet-name>MostraStudentiIndirizzi</servlet-name>
+    <servlet-class>controller.MostraElencoStudenti</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MostraStudentiIndirizzi</servlet-name>
+    <url-pattern>/tuttiStudenti</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
     <servlet-name>IscriviStudenteServlet</servlet-name>
     <servlet-class>controller.IscriviStudente</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>IscriviStudenteServlet</servlet-name>
     <url-pattern>/services/iscriviStudente</url-pattern>
-  </servlet-mapping>  
+  </servlet-mapping>
   
- 
+  <servlet>
+		<servlet-name>GestioneLogin</servlet-name>
+		<servlet-class>controller.CheckLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GestioneLogin</servlet-name>
+		<url-pattern>/checkLogin</url-pattern>
+	</servlet-mapping> 
 </web-app>

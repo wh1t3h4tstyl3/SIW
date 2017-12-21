@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="utf-8" %>
 <!DOCTYPE html>
 <html>
 <head lang="it">
@@ -32,14 +33,15 @@
 				</a>
 				<figcaption>La nostra segreteria studenti</figcaption>
 			</figure>
+			<a href="checkLogin">Login</a>
 		</div>
 	</header>
 	<p align="center">
 		Benvenuti nel portale di gestione delle <br> Segreterie Studenti.
 	</p>
 	<p align="center">
-		Qui di seguito trovi le funzionalità previste dal portale. <br> <strong>
-			Naviga tra i seguenti link </strong> per gestire le varie funzionalità.
+		Qui di seguito trovi le funzionalitÃ  previste dal portale. <br> <strong>
+			Naviga tra i seguenti link </strong> per gestire le varie funzionalitÃ .
 	</p>
 	
 	<nav class="navbar navbar-inverse" role="navigation">
@@ -51,11 +53,12 @@
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" href="#">Studenti <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="contents/studenti.html">Soli nominativi</a></li>
+						<li><a href="">Soli nominativi</a></li>
 						<li><a href="contents/studentiNominativiIndirizzi.html">Nominativi
 								e indirizzi</a></li>
 						<li><a href="contents/studentiInfoComplete.html">Informazioni
 								complete</a></li>
+						<li><a href="tuttiStudenti">Info Complete Temporaneo DB</a></li>
 						<li><a href="services/iscriviStudente.html">Iscrivi
 								studente</a></li>
 						<li><a href="services/isee.html">Calcolo ISEE</a></li>
@@ -117,7 +120,7 @@
 			registrazione esami, richiesta e rilascia di certificati, gestione
 			della didattica e delle laure. Ogni corso di Laurea ha la propria
 			segreteria dove si può rivolgersi per qualsiasi informazione riguardo
-			alla didattica dell´Ateneo.
+			alla didattica dell'Ateneo.
 		</article>
 		<article id="ictCenter">
 			<header>
@@ -125,14 +128,14 @@
 			</header>
 			Dalla pagina accessibile da <a
 				href="http://www.unical.it/portale/strutture/centri/centroict/serviziict/homeservizicentro/"><strong>qui</strong></a>
-			è possibile accedere a tutti i servizi ed al Centro Customer
-			Satisfaction (CCS) del Centro ICT d’Ateneo. È possibile trovare il
+			E' possibile accedere a tutti i servizi ed al Centro Customer
+			Satisfaction (CCS) del Centro ICT d'Ateneo. E' possibile trovare il
 			servizio desiderato sia attraverso degli elenchi di servizi
 			organizzati secondo la tipologia di utenza sia attraverso la ricerca
 			per parole chiave con un motore di ricerca locale google. Per ogni
 			servizio è stata approntata una scheda descrittiva contenente tutte
 			le informazioni sullo stesso. Dal CCS invece è possibile valutare,
-			accedere alle statistiche d’uso o sporgere reclami sui servizi.
+			accedere alle statistiche d'uso o sporgere reclami sui servizi.
 		</article>
 	</section>
 
